@@ -1,0 +1,1 @@
+{"name":"python-django","version":2,"public":true,"builds":[{"src":"app.py","use":"@now/python","config":{"maxLambdaSize":"15mb"}},{"src":"css/**","use":"@now/static"}],"routes":[{"src":"/css/(.*)","dest":"css/$1"},{"src":"/(.*)","dest":"app.py"}]}
